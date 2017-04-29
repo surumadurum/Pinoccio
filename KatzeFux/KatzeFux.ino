@@ -5,6 +5,9 @@ Servo servo_mouth_fox;
 Servo servo_head_turn_cat;
 Servo servo_head_turn_fox;
 
+//as of 2017-04-29 (after most recent version on ricki's laptop was deleted) all port assignments are valid
+
+
 #define RECV_STEERING 22
 #define RECV_SPEED 24
 
