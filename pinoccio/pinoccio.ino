@@ -103,10 +103,10 @@ void loop()
 
   
   //NOTE THAT HERE WE RESTRICT THE EXTENT OF MOVEMENT BY REDUCING THE SECOND FACTOR
-  if(smooth_y>90)
-    smooth_y = 90 + 50* (1-(sin(3.14*smooth_y/180)));
-  else if(smooth_y<90)
-    smooth_y = 90 - 50* (1-(sin(3.14*smooth_y/180)));
+  if(smooth_y>90) //look down
+    smooth_y = 90 + 80* (1-(sin(3.14*smooth_y/180)));
+  else if(smooth_y<90) //look up
+   smooth_y = 90 - 50* (1-(sin(3.14*smooth_y/180)));
 
   servo_leftright.write(smooth_x);
   servo_updown.write(smooth_y);
